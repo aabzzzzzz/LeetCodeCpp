@@ -134,3 +134,8 @@ CTestTestfile.cmake
 /CMakeLists.txt
 /main.cpp
 /.idea
+/.idea/.gitignore
+/.idea/LeetCodeCpp.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml

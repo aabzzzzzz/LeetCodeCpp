@@ -2,7 +2,6 @@
 // Created by 编程小北 on 2022/3/24.
 //
 
-#include "LC643.h"
 #include <iostream>
 #include <vector>
 
@@ -12,9 +11,8 @@ using namespace std;
 
 double findMaxAverage(vector<int>& nums, int k);
 
-
-//https://blog.csdn.net/weixin_33775582/article/details/90687476
-//学习笔记（一）省略std
+// https://blog.csdn.net/weixin_33775582/article/details/90687476
+// 学习笔记（一）省略std
 
 // https://blog.csdn.net/wkq0825/article/details/82255984
 // C++ vector的用法（整理）
@@ -34,14 +32,14 @@ double findMaxAverage(vector<int>& nums, int k);
 // https://www.cnblogs.com/evenleee/p/10382335.html
 // C++四种类型转换总结 const_cast static_cast dynamic_cast reinterpret_cast
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    int arr[] = {1,12,-5,-6,50,3};
-    vector<int> aaa(arr, arr + 6);
-    int k = 4;
-    double a = findMaxAverage(aaa, k);
-    return 0;
-}
+//int main() {
+//    std::cout << "Hello, World!" << std::endl;
+//    int arr[] = {1,12,-5,-6,50,3};
+//    vector<int> aaa(arr, arr + 6);
+//    int k = 4;
+//    double a = findMaxAverage(aaa, k);
+//    return 0;
+//}
 
 double findMaxAverage(vector<int>& nums, int k) {
 
