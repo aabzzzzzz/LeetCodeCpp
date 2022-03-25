@@ -6,6 +6,8 @@
 #include "LC3.h"
 #include "string"
 #include "unordered_map"
+#include <vector>
+
 using namespace std;
 
 // https://blog.csdn.net/liitdar/article/details/80498634
@@ -53,6 +55,33 @@ int lengthOfLongestSubstring(string s) {
     }
 
     return result;
+}
+
+
+int minSubArrayLen(int target, vector<int>& nums) {
+
+
+    int left = 0;
+    int right = 0;
+    int result = INT_MAX;
+
+    int n = nums.size();
+    if (n == 0){
+        return 0;
+    }
+    int sum = 0;
+
+    while (right < n){
+        sum+= nums[right];
+        while (sum >= target){
+            result = min(result, right- left + 1);
+            sum -= nums[left];
+            left++;
+        }
+        right++;
+    }
+    return result == INT_MAX ? 0: result;
+
 }
 
 int main() {
